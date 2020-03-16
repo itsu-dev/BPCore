@@ -25,4 +25,8 @@ class NumberType(private val value: Double) : INumberType {
         return NumberType(this.value / value.getValue())
     }
 
+    fun toStringType(): StringType {
+        return StringType(value.toString())
+    }
+
 }

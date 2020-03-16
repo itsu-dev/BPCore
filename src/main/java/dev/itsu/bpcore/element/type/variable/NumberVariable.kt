@@ -1,4 +1,4 @@
-package dev.itsu.bpcore.element.variable
+package dev.itsu.bpcore.element.type.variable
 
 import dev.itsu.bpcore.element.type.INumberType
 import dev.itsu.bpcore.element.type.NumberType
