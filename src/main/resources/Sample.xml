@@ -25,9 +25,9 @@
         </variable>
     </variables>
 
-    <closures>
-        <closure name="main">
-            <function type="call" class="dev.itsu.bpcore.element.function.mathematics.mathutil.AbsFunction" name="abs">
+    <processes>
+        <process name="main">
+            <function class="dev.itsu.bpcore.element.function.mathematics.mathutil.AbsFunction" name="abs">
                 <arguments>
                     <argument>${value1}</argument>
                 </arguments>
@@ -35,10 +35,10 @@
 
             <assignment to="${value2}"/>
 
-            <function type="call" class="dev.itsu.bpcore.element.function.system.PrintFunction" name="print">
+            <function class="dev.itsu.bpcore.element.function.system.PrintFunction" name="print">
                 <arguments>${value1}</arguments>
             </function>
-        </closure>
-    </closures>
+        </process>
+    </processes>
 
 </root>
