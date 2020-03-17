@@ -6,7 +6,6 @@ import dev.itsu.bpcore.element.type.variable.VariableImpl
 import dev.itsu.bpcore.exception.loader.XMLLoadException
 import dev.itsu.bpcore.exception.xml.DuplicateVariableException
 import dev.itsu.bpcore.exception.xml.InvalidVariableTypeException
-import dev.itsu.bpcore.loader.model.Closure
 import dev.itsu.bpcore.loader.model.Information
 import dev.itsu.bpcore.loader.model.Project
 import dev.itsu.bpcore.loader.util.ListTypeUtils
