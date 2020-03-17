@@ -4,8 +4,11 @@ class BooleanType(private val value: Boolean) : IBooleanType {
 
     private constructor() : this(false)
 
-    override fun getValue(): Boolean {
+    override fun getBoolean(): Boolean {
         return value
     }
 
+    override fun get(): Any {
+        return value
+    }
 }

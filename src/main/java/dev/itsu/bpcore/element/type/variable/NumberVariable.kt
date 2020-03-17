@@ -16,8 +16,8 @@ class NumberVariable(name: String, private var value: INumberType) : VariableImp
         this.value = value as NumberType
     }
 
-    override fun getValue(): Double {
-        return value.getValue()
+    override fun getNumber(): Double {
+        return value.getNumber()
     }
 
 }

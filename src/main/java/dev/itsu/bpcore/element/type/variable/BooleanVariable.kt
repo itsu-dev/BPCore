@@ -16,8 +16,8 @@ class BooleanVariable(name: String, private var value: BooleanType) : VariableIm
         this.value = value as BooleanType
     }
 
-    override fun getValue(): Boolean {
-        return value.getValue()
+    override fun getBoolean(): Boolean {
+        return value.getBoolean()
     }
 
 }

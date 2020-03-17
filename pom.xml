@@ -9,6 +9,14 @@
     <version>1.0-SNAPSHOT</version>
     <name>BlockProgrammingCore</name>
     <description>A powerful block programming engine for JVM.</description>
+    <url>https://github.com/itsu-dev/BPCore/tree/master</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <properties>
         <kotlin.version>1.3.61</kotlin.version>

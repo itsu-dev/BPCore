@@ -4,8 +4,11 @@ class ListType(private val value: MutableList<Type>) : IListType {
 
     constructor() : this(mutableListOf())
 
-    override fun getValue(): MutableList<Type> {
+    override fun getList(): MutableList<Type> {
         return value
     }
 
+    override fun get(): Any {
+        return value
+    }
 }

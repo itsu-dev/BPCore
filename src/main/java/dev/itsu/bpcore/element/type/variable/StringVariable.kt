@@ -16,8 +16,8 @@ class StringVariable(name: String, private var value: StringType) : VariableImpl
         this.value = value as StringType
     }
 
-    override fun getValue(): String {
-        return value.getValue()
+    override fun getString(): String {
+        return value.getString()
     }
 
 }
