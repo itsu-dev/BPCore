@@ -1,10 +1,10 @@
 package dev.itsu.bpcore.element.type
 
-class ListType(private val value: MutableList<Type>) : IListType {
+class ListType(private val value: List<Type>) : IListType {
 
     constructor() : this(mutableListOf())
 
-    override fun getList(): MutableList<Type> {
+    override fun getList(): List<Type> {
         return value
     }
 

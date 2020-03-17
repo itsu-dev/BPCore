@@ -14,7 +14,7 @@ class ListVariable(name: String, private var value: IListType) : VariableImpl(na
         this.value = value as ListType
     }
 
-    override fun getList(): MutableList<Type> {
+    override fun getList(): List<Type> {
         return value.getList()
     }
 

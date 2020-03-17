@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<root
-        projectName="TestProject"
-        author="itsu"
-        version="1.0.0"
-        description="This is a test project."
->
+<root>
+    <information>
+        <name>TestProject</name>
+        <author>itsu</author>
+        <version>1.0.0</version>
+        <description>This is a test Project.</description>
+    </information>
 
     <variables>
         <variable>
@@ -12,10 +13,21 @@
             <init>1</init>
             <type>dev.itsu.bpcore.element.type.variable.NumberVariable</type>
         </variable>
+        <variable>
+            <name>value2</name>
+            <init>true</init>
+            <type>dev.itsu.bpcore.element.type.variable.BooleanVariable</type>
+        </variable>
+        <variable>
+            <name>value3</name>
+            <init>www</init>
+            <type>dev.itsu.bpcore.element.type.variable.StringVariable</type>
+        </variable>
     </variables>
 
-    <event type="onCreate">
-            <function class="dev.itsu.bpcore.element.function.mathematics.mathutil.AbsFunction" name="abs">
+    <closures>
+        <closure name="main">
+            <function type="call" class="dev.itsu.bpcore.element.function.mathematics.mathutil.AbsFunction" name="abs">
                 <arguments>
                     <argument>${value1}</argument>
                 </arguments>
@@ -23,9 +35,10 @@
 
             <assignment to="${value2}"/>
 
-        <function class="dev.itsu.bpcore.element.function.system.PrintFunction" name="print">
-            <arguments>${</arguments>
-        </function>
-    </event>
+            <function type="call" class="dev.itsu.bpcore.element.function.system.PrintFunction" name="print">
+                <arguments>${value1}</arguments>
+            </function>
+        </closure>
+    </closures>
 
 </root>
